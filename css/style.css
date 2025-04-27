@@ -124,11 +124,6 @@ body{
 }
 
 
-.contenedor-grid-taller img{
-    width: 90%;
-    max-width: 300px;
-    height: auto;
-}
 
 .contenedor-grid-taller{
     display: flex;
@@ -150,12 +145,7 @@ body{
     position: sticky;
 }
 
-.contenedor-grid-serv{
-    text-align: center
-}
-.contenedor-grid-serv img{
-text-align: center;
-}
+
 
 
 
@@ -166,6 +156,7 @@ text-align: center;
 
 
 /* seccion grid index*/
+
 
 .contenedor-grid{
     display: grid;
@@ -450,8 +441,9 @@ align-items: center;
 
 
 }
+
 .contenedor-grid-serv img{
-    height: 90%;
+    height: 100%;
     width:90% ;
     border-radius: 10px;
     box-shadow: 7px 10px 14px 1px rgb(0,0,0,0.75);

@@ -116,21 +116,17 @@ body{
 /* seccion taller*/
 
 .titulo-taller{
+    padding: 10px;
     font-size: 36px;
-  
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+
     color: #222;
 }
 
-.imagen1-taller{
 
-width: 100%;
-height: auto;
-
-}
-.imagen2-taller{
-    width: 100%;
+.contenedor-grid-taller img{
+    width: 90%;
+    max-width: 300px;
     height: auto;
 }
 
@@ -156,6 +152,9 @@ height: auto;
 
 .contenedor-grid-serv{
     text-align: center
+}
+.contenedor-grid-serv img{
+text-align: center;
 }
 
 
@@ -302,6 +301,7 @@ font-size: 8px;
 .contenedor-grid-taller{
     font-size: 13px;
 }
+
  }
 
 /* Grid Comprar*/
@@ -314,7 +314,7 @@ font-size: 8px;
     "casa3  texto3"
     "casa4  texto4";
 
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 55%;
     grid-template-rows: repeat(4, auto) ;
     gap: 20px;
     justify-content: center;
@@ -390,7 +390,7 @@ width: 100%;
      "casa1  casa1 casa1"
     "texto1 texto2 texto3"
     ;
-grid-template-columns: 35% 40% 35%;;
+grid-template-columns: 30% 40% 30%;
 grid-template-rows: 150px 300px 150px;
 justify-content: center;
 justify-items: center;
@@ -399,8 +399,8 @@ align-items: center;
 
 }
 .contenedor-grid-taller img{
-    height: 130%;
-    width:90% ;
+    height: 100%;
+    width:100% ;
    
 }
 .titulo-taller{ grid-area: titulo;
@@ -422,7 +422,7 @@ align-items: center;
 
 
 }
-.imagen1-taller{ grid-area: casa1
+.imagen1-taller{ grid-area: casa1;
    }
 
 
@@ -431,15 +431,15 @@ align-items: center;
 .contenedor-grid-serv{
     display: grid;
     grid-area: 
-    "titulo titulo titulo"
-    "casa1 casa2 casa3"
-    "texto1 texto2 texto3";
+    "titulo titulo "
+    "casa1 casa2 "
+    "texto1 texto2 ";
 
 /* cantidad y el ancho de cada columna, 1 valor por cada columna*/
-grid-template-columns: 30% 40% 30%;
+grid-template-columns: 50% 50%;
 
 /*cantidad y alto de cada fila, 1 valor por cada fila*/
-grid-template-rows: 100px 250px 100px;
+grid-template-rows: 150px 150px;
 /* centrar la grilla como caja  cerrada*/
 justify-content: center;
 /* eje horizontal*/
@@ -468,10 +468,6 @@ grid-row: 3/4;
     grid-column: 2/3;
     grid-row: 3/4;
 }
-.texto3serv{
-    grid-column: 3/4;
-    grid-row: 3/4;
-}
 
 .imagen1serv{
     grid-column: 1/2;
@@ -480,8 +476,4 @@ grid-row: 3/4;
 .imagen2serv{
     grid-column: 2/3;
     grid-row: 2/3;
-}
-.imagen3serv{
-grid-column: 3/4;
-grid-row: 2/3;
 }
